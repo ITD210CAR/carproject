@@ -1,0 +1,45 @@
+ /*--
+Author:Sagan Jackson
+Date: February 4, 2019
+Course: ITD210
+--*/
+
+
+/* Global styles 
+------------------------------------*/
+/* border box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* ----------Home Page -----------------*/
+
+
+
+/* ----------Navigation ------------------*/
+
+/* Header & Footer 
+------------------------------------*/
+
+   
+
+
+
+
+
+
+/* Footer
+------------------------------------*/
+.footer {
+    background-image: url("https://www.floodingresiliency.org/wp-content/uploads/2018/10/Booker-T.jpg"), url("paper.gif");
+    background-attachment: fixed;
+    min-height: 500px;
+}
