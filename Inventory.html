@@ -6,51 +6,285 @@ Author:Sagan Jackson
 Date: February 4, 2019
 Course: ITD210
 -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iventory</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="css/styles.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>General Info</title>
+	
     <!--<link rel="stylesheet" href="css/styles.css"> -->
+	
 </head>
 <body>
     <!-- // Intro -->
-    <header>
+   
+   <header>
         
-              <h2>Inventory</h2>
+              <h2>Virginia Beach Chevy <a href="Indexpage.html"><img src="images/logo.png" alt="Logo" style="width:100px;height:100px;" align="left" ></a></h2>
               
          
     </header>
      <!-- // Navigation -->
-    <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a class="active" href="about.html">Vehicles</a></li>
-  <li><a href="reports.html">Inventory</a></li>      
-  
+	 <ul>
+  <li><a href="Indexpage.html">Home</a></li>
+  <li><a href="SUV.html">SUV Vehicles</a></li>
+  <li><a class="active" href="Inventory.html">Inventory</a></li>
 </ul>
-    <main> 
-        <!-- // Inventory -->
-        <section class="home">
-            <div class="content-wrap">
-                <h2><a id= "TermTop">Inventory</a></h2>
-                
-                </div>
-                
-            
-        </section>
+  <main>
+    
+ <h2>Inventory</h2>
+
+<p>Click on a button to choose list view or grid view.</p>
+
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+    
+<ul>
+<div class="row">
+  <div class="column">
+    <li><img src="images/suv.jpg" alt="tracker" class="center" align= "left" >
+        <h2>Tracker</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Grey</li><br>
+      <li>- Cost: $7,500</li></ul>
+      </li>
+  </div>
+    
+    
+  <div class="column">
+      <li><img src="images/suburban.jpg" alt="suburban" class="center" align= "left" >
+    <h2>Suburban</h2>
+          <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Black</li><br>
+      <li>- Cost: $50,800</li></ul>
+      </li>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+      <li><img src="images/equinox.jpg" alt="equinox" class="center" align= "left" >
+    <h2>Equinox</h2>
+          <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $23,800</li></ul></li>
+  </div>
+    
+    
+  <div class="column">
+      <li><img src="images/traverse.jpg" alt="traverse" class="center" align= "left" >
+    <h2>Traverse</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Burgundy</li><br>
+      <li>- Cost: $29,930</li></ul>
+      </li>
+  </div>
+    
+    <div class="column">
+      <li><img src="images/tahoe.jpg" alt="tahoe" class="center" align= "left" >
+    <h2>Tahoe</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $48,000</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/cruze.jpg" alt="cruze" class="center" align= "left" >
+    <h2>Cruze</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Black</li><br>
+      <li>- Cost: $19,120</li></ul>
+        </li>    
+  </div>
+  
+    <div class="column">
+      <li><img src="images/malibu.jpg" alt="malibu" class="center" align= "left" >
+    <h2>Malibu</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $30,975</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/impala.jpg" alt="impala" class="center" align= "left" >
+    <h2>Impala</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Red</li><br>
+      <li>- Cost: $30,520</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/sonic.jpg" alt="sonic" class="center" align= "left" >
+    <h2>Sonic</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Blue</li><br>
+      <li>- Cost: $16,720</li></ul>
+        </li>    
+  </div>
+    
+    
+    <div class="column">
+      <li><img src="images/spark.jpg" alt="spark" class="center" align= "left" >
+    <h2>Spark</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $14,320</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/colorado.jpg" alt="colorado" class="center" align= "left" >
+    <h2>Colorado</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Silver</li><br>
+      <li>- Cost: $24,800</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/silverado1500.jpg" alt="silverado1500" class="center" align= "left" >
+    <h2>Silverado 1500</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Grey</li><br>
+      <li>- Cost: $36,900</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/silverado1500ld.jpg" alt="silverado1500LD" class="center" align= "left" >
+    <h2>Silverado 1500LD</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $39,200</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/silverado2500hd.jpg" alt="silverado2500HD" class="center" align= "left" >
+    <h2>Silverado 2500HD</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: White</li><br>
+      <li>- Cost: $42,500</li></ul>
+        </li>    
+  </div>
+    
+    <div class="column">
+      <li><img src="images/silverado3500hd.jpg" alt="silverado3500HD" class="center" align= "left" >
+    <h2>Silverado 3500HD</h2>
+    <ul>
+          <li>- Make: Chevrolet</li><br>
+      <li>- Color: Black</li><br>
+      <li>- Cost: $46,700</li></ul>
+        </li>    
+  </div>
+</div>
+    </ul>
+    
+ </main>   
+    
 
 
-        <!--image-->
-        <section class="footer">
-            <div class="content-wrap">
-            </div>
-        </section>
-    </main>
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+   
+    
     
     <!-- // Footer & contact info -->
     <footer>
-        <div class="content-wrap">
-            
-            
-          
+	<div class="container" style= "padding-top: 50px; padding-bottom: 50px;">
+  <!-- <h2>Virginia Beach Chevrolet</h2>  -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%;" class="center">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+	
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/bluechevy.jpg" alt="Blue Chevy" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/silverchevy.jpg" alt="Silver Chevy" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/chevyinterior.jpg" alt="Chevy Interior" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+        <div class="footer">
+		
+           
         </div>
     </footer>
 </body>
